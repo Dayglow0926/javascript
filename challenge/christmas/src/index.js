@@ -5,7 +5,6 @@ function christmasCountDown() {
   const nowDate = new Date();
   const count = Math.abs(christmasDate.getTime() - nowDate.getTime());
 
-  const test = new Intl.RelativeTimeFormat("ko-KR").format(count, "second");
   const date = Math.floor(count / 86400000);
   const hour = Math.floor((count % 86400000) / 3600000);
   const min = Math.floor((count % 3600000) / 60000);
